@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 interface AppProps {
-    color: string
+    color?: string 
 }
 
 class App extends React.Component<AppProps> {
@@ -11,4 +11,4 @@ class App extends React.Component<AppProps> {
     }
 }
 
-ReactDOM.render(<App color='green' />, document.querySelector('#root'))
+ReactDOM.render(<App />, document.querySelector('#root'))
